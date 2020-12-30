@@ -5,7 +5,6 @@ pipeline {
             steps {
                 
                 sh "git clone https://github.com/kishancs2020/TicketBookingServiceJunitTesting.git"
-                sh "mvn clean -f TicketBookingServiceJunitTesting"
             }
         }
         stage('install') {
