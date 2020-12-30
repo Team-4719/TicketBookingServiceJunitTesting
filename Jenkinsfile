@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('install') {
             steps {
+                
                 sh "mvn install -f TicketBookingServiceJunitTesting"
             }
         }
