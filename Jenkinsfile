@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-                sh "rmdir  /s /q TicketBookingServiceJunitTesting"
+                sh "rmdir ./TicketBookingServiceJunitTesting"
                 sh "git clone https://github.com/kishancs2020/TicketBookingServiceJunitTesting.git"
             }
         }
