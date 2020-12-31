@@ -1,6 +1,12 @@
 pipeline {
     agent any
     stages {
+        stage('git repo & clean') {
+            steps {
+             
+                sh "mvn clean -f TicketBookingServiceJunitTesting"
+            }
+        }
         stage('install') {
             steps {
                 
